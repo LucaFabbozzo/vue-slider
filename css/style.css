@@ -29,7 +29,6 @@ img {
 
 .slider .bottom {
   display: flex;
-  margin-top: -4px;
 }
 
 .slider i {
@@ -104,7 +103,7 @@ img {
   top: 14%;
   right: 5%;
   font-weight: bold;
-  color: #303030;
+  color: #dedede;
 }
 
 
