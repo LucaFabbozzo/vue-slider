@@ -63,7 +63,7 @@ createApp({
       this.nextPrev();
       }, 3000)
     },
-    mouseOver(stop) {
+    pauseCounter(stop) {
       if(stop)clearInterval(clock);
     }
   },

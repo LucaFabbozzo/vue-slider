@@ -18,7 +18,7 @@
 
       <div class="container">      
         <h1>{{title}}</h1>
-        <div @mouseover="mouseOver()" class="slider">  
+        <div @mouseover="pauseCounter(true)" @mouseleave="getAutoPlay()" class="slider">  
           <div class="top rel">
                 <h2>{{slider[counterImages].title}}</h2>
                 <p>{{slider[counterImages].description}}</p>
