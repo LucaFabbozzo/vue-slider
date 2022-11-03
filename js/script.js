@@ -51,6 +51,9 @@ createApp({
         this.counterImages = this.slider.length - 1
       }
     },
+    changeImage(index) {
+      this.counterImages = index
+    }
   }
 }).mount('#app')
 
