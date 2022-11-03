@@ -4,11 +4,20 @@
   margin: 0;
 }
 
-
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #e7e4e4;
+  background-color: #e3e1e1;
 }
+
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #232323;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
 
 img {
   width: 100%;
@@ -17,7 +26,7 @@ img {
 
 .container {
   width: 46%;
-  margin: 70px auto;
+  margin: 20px auto;
 }
 
 
@@ -103,7 +112,7 @@ img {
   top: 14%;
   right: 5%;
   font-weight: bold;
-  color: #dedede;
+  color: #d3d2d2;
 }
 
 

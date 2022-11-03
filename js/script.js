@@ -37,8 +37,12 @@ createApp({
           photo: "/img/05.jpg"
         }
       ],
+
+      title: 'One day in Buenos Aires',
+      footer: 'dev and photos by Luca Fabbozzo',
       counterImages: 0,
-      isNext: '' 
+      isNext: '',
+      stop: ''
     }
   }, 
   methods: {
@@ -55,9 +59,12 @@ createApp({
       this.counterImages = index
     },
     getAutoPlay() {
-      setInterval(() => {
+      clock = setInterval(() => {
       this.nextPrev();
       }, 3000)
+    },
+    mouseOver(stop) {
+      if(stop)clearInterval(clock);
     }
   },
   mounted(){
@@ -68,4 +75,6 @@ createApp({
     
   }
 }).mount('#app')
+
+
 

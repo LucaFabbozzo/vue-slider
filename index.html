@@ -16,8 +16,9 @@
 
   <div id="app">
 
-      <div class="container">
-        <div class="slider">  
+      <div class="container">      
+        <h1>{{title}}</h1>
+        <div @mouseover="mouseOver()" class="slider">  
           <div class="top rel">
                 <h2>{{slider[counterImages].title}}</h2>
                 <p>{{slider[counterImages].description}}</p>
@@ -30,14 +31,8 @@
             <div @click="nextPrev(false)" class="btn-arrow left"><i class="fa-solid fa-chevron-left"></i></div> 
             
         </div>
-        <!-- <div class="down"> 
-          <button class="btn_bottom rewind"><i class="fa-solid fa-backward"></i></button>
-          <button class="btn_bottom stop"><i class="fa-solid fa-stop"></i></button>
-          <button class="btn_bottom play"><i class="fa-solid fa-play"></i></button>
-          <button class="btn_bottom fast"><i class="fa-solid fa-forward"></i>x2</button>
-        </div> -->
+     
     </div>
-
   </div>
 
 
