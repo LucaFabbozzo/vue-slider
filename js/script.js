@@ -53,7 +53,19 @@ createApp({
     },
     changeImage(index) {
       this.counterImages = index
+    },
+    getAutoPlay() {
+      setInterval(() => {
+      this.nextPrev();
+      }, 3000)
     }
+  },
+  mounted(){
+    this.nextPrev();
+    this.getAutoPlay();
+  },
+  created(){
+    
   }
 }).mount('#app')
 
