@@ -18,10 +18,10 @@
 
       <div class="container">
         <div class="slider">  
-          <div class="top">
-                <!-- <h2>Obelisco</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, assumenda.</p>
-                <img src="./img/01.jpg" alt="cusco"> -->
+          <div class="top" class="image" v-for="image in slider">
+                <h2>{{image.title}}</h2>
+                <p>{{image.description}}</p>
+                <img :src="image.photo" :alt="image.title">
             </div>
             <div class="bottom">
                <img v-for="image in slider" :src="image.photo" :alt="image.title">
