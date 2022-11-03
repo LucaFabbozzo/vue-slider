@@ -37,20 +37,20 @@ createApp({
           photo: "/img/05.jpg"
         }
       ],
-      active: true,
       counterImages: 0,
-      isNext: false
+      isNext: '' 
     }
   }, 
   methods: {
-    nextSlide() {
-      this.counterImages++
-      if(conterImages = sliders.length) counterImages = 0;
+    nextPrev(isNext) {
+      if(isNext)this.counterImages++;
+      else this.counterImages--;
+      if(this.counterImages === this.slider.length) {
+        this.counterImages = 0;
+      } else if(this.counterImages < 0){
+        this.counterImages = this.slider.length - 1
+      }
     },
-    prevSlide() {
-      this.counterImages--
-      if(counterImages < 0 ) counterImages = sliders.length - 1;
-    }
   }
 }).mount('#app')
 
