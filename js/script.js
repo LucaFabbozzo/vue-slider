@@ -37,6 +37,20 @@ createApp({
           photo: "/img/05.jpg"
         }
       ],
+      active: true,
+      counterImages: 0,
+      isNext: false
+    }
+  }, 
+  methods: {
+    nextSlide() {
+      this.counterImages++
+      if(conterImages = sliders.length) counterImages = 0;
+    },
+    prevSlide() {
+      this.counterImages--
+      if(counterImages < 0 ) counterImages = sliders.length - 1;
     }
   }
 }).mount('#app')
+

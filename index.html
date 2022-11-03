@@ -18,24 +18,24 @@
 
       <div class="container">
         <div class="slider">  
-          <div class="top rel"  v-for="image in slider">
-                <h2>{{image.title}}</h2>
-                <p>{{image.description}}</p>
-                <img :src="image.photo" :alt="image.title">
+          <div class="top rel">
+                <h2>{{slider[counterImages].title}}</h2>
+                <p>{{slider[counterImages].description}}</p>
+                <img :src="slider[counterImages].photo" :alt="slider[counterImages].title">
             </div>
             <div class="bottom">
                <img v-for="image in slider" :src="image.photo" :alt="image.title">
             </div>
-            <div class="btn-arrow right"><i class="fa-solid fa-chevron-right"></i></div> 
-            <div class="btn-arrow left"><i class="fa-solid fa-chevron-left"></i></div> 
+            <div @click="nextSlide()" class="btn-arrow right"><i class="fa-solid fa-chevron-right"></i></div> 
+            <div @click="prevSlide()" class="btn-arrow left"><i class="fa-solid fa-chevron-left"></i></div> 
             
         </div>
-        <div class="down"> 
+        <!-- <div class="down"> 
           <button class="btn_bottom rewind"><i class="fa-solid fa-backward"></i></button>
           <button class="btn_bottom stop"><i class="fa-solid fa-stop"></i></button>
           <button class="btn_bottom play"><i class="fa-solid fa-play"></i></button>
           <button class="btn_bottom fast"><i class="fa-solid fa-forward"></i>x2</button>
-        </div>
+        </div> -->
     </div>
 
   </div>
