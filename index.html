@@ -24,7 +24,7 @@
                 <img :src="slider[counterImages].photo" :alt="slider[counterImages].title">
             </div>
             <div class="bottom">
-               <img v-for="(image, indice) in slider" @click="changeImage(indice)" :src="image.photo" alt="image.title">
+               <img v-for="(image, i) in slider" @click="changeImage(i)" :class="{'active': i === counterImages}" :src="image.photo" alt="image.title">
             </div>
             <div @click="nextPrev(true)" class="btn-arrow right"><i class="fa-solid fa-chevron-right"></i></div> 
             <div @click="nextPrev(false)" class="btn-arrow left"><i class="fa-solid fa-chevron-left"></i></div> 
