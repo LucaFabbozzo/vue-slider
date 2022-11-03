@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #e7e4e4;
+}
+
+img {
+  width: 100%;
+}
+
+
+.container {
+  width: 46%;
+  margin: 70px auto;
+}
+
+
+.slider {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.slider .bottom {
+  display: flex;
+  margin-top: -4px;
+}
+
+.slider i {
+  color: #f5f2f2;
+}
+
+.slider .bottom img {
+  width: calc(100% / 5);
+}
+
+
+
+/* classi speciali */
+.bottom img.active  {
+  opacity: 0.7;
+}
+
+.item {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* bottoni right left */
+
+.btn-arrow {
+  position: absolute;
+  cursor: pointer;
+  bottom: 7%;
+  transform: translateX(-50%);
+  background-color: #cb1616;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+}
+
+.btn-arrow.right {
+  right: 1%;
+}
+
+.btn-arrow.left {
+  left: 3%;
+}
+
+
+/* descrizioni foto */
+
+.rel {
+  position: relative;
+}
+
+.top h2 {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  font-size: 1.5rem;
+  color: #cb1616;
+  text-transform: uppercase;
+}
+
+.top p {
+  position: absolute;
+  top: 14%;
+  right: 5%;
+  font-weight: bold;
+  color: #303030;
+}
+
+
+
+/* bottoni inferiori */
+
+.down {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.down .fa-forward {
+  margin-right: 4px;
+}
+
+.btn_bottom {
+  background-color: #cb1616;
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: #f5f2f2;
+  cursor: pointer;
+  border: 1px solid #585858;
+  margin: 4px;
+}
+
+.btn_bottom:hover {
+  background-color: #bb5d5d;
+}
