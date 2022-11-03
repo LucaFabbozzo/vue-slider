@@ -37,9 +37,8 @@ createApp({
           photo: "/img/05.jpg"
         }
       ],
-
       title: 'One day in Buenos Aires',
-      footer: 'dev and photos by Luca Fabbozzo',
+      footer: 'photo by Luca Fabbozzo',
       counterImages: 0,
       isNext: '',
       stop: ''

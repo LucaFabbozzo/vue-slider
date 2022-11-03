@@ -19,6 +19,7 @@ h1 {
 }
 
 
+
 img {
   width: 100%;
 }
@@ -38,6 +39,7 @@ img {
 
 .slider .bottom {
   display: flex;
+  margin-top: -4px;
 }
 
 .slider i {
@@ -112,7 +114,7 @@ img {
   top: 14%;
   right: 5%;
   font-weight: bold;
-  color: #d3d2d2;
+  color: #d36464;
 }
 
 
@@ -141,4 +143,12 @@ img {
 
 .btn_bottom:hover {
   background-color: #bb5d5d;
+}
+
+
+
+p.footer {
+  padding-top: 60px;
+  padding-left: 20px;
+  font-weight: lighter;
 }
