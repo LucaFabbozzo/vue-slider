@@ -58,12 +58,12 @@ createApp({
       this.counterImages = index
     },
     getAutoPlay() {
-      clock = setInterval(() => {
+      this.clock = setInterval(() => {
       this.nextPrev();
       }, 3000)
     },
     pauseCounter(stop) {
-      if(stop)clearInterval(clock);
+      if(stop)clearInterval(this.clock);
     }
   },
   mounted(){
